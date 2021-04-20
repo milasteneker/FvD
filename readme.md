@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** -jouw naam-
+**Auteur:** Mila Steneker
 
 **Het werk:** [opdracht 1](opdracht1/index.html) en [opdracht 2](opdracht2/index.html)
 
@@ -26,3 +26,6 @@ In zo’n ‘post’ neem je op:
 - Wat er goed ging
 - Wat er lastig is
 - Wat je plannen zijn
+
+## Voortgang 1
+Voor de eerste voortgang had ik nog niet echt een planning. Ik was nog een beetje zoekende in hoe ik alles ging maken. Ik heb voor nu alleen nog de fonts en kleuren gezocht en de google letters in mijn code gezet.

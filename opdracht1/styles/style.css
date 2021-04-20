@@ -2,13 +2,13 @@
 
 /* FONTS */
 @font-face {
-	font-family: 'eenfont';
-	src: url('../fonts/eenfont.woff2') format('woff2'),
-			 url('../fonts/eenfont.woff') format('woff');
+	font-family: 'futura';
+	src: url('../fonts/futura-pt-medium.otf') format('otf');
 	font-weight: normal;
 	font-style: normal;
-
 }
+
+
 
 
 /* ALGEMENE STYLING */
@@ -17,11 +17,42 @@
 }
 
 body {
-  font-family:eenfont, sans-serif;
-  color:#111;
-  background-color:#eee;
+  
 }
+
 
 
 /* BRAND STYLING */
 
+.google{
+	display: flex;
+	flex-direction: row;
+	font-size: 350%;
+	font-family:futura, sans-serif;
+  	background-color:#FFFFFF;
+}
+
+h2.g1{
+	color: #4F80C1;
+}
+
+h2.o1{
+	color: #DF4A32;
+}
+
+h2.o2{
+	color: #FBB911;
+}
+
+h2.g2{
+	color: #4F80C1;
+}
+
+h2.l{
+	color: #33A653;
+}
+
+h2.e{
+	color: #DF4A32;
+	transform: rotate(-19deg);
+}
