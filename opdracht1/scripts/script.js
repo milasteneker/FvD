@@ -9,4 +9,4 @@ function hapjeSpeelt(event){
 	hapjeSound.play();
 }
 
-hapje.addEventListener('click', hapjeSpeelt );
+hapje.addEventListener('click', hapjeSpeelt);

@@ -8,7 +8,25 @@
 	font-style: normal;
 }
 
+:root{
+	--hariboAchtergrond:#FFE802;
+	--googleAchtergrond:#FFFFFF;
+	--titel: black;
+	--mainAchtergrond: #E3E3E3;
+	--hariboBorder: white;
+	--hariboShadow: black;
+}
 
+@media (prefers-color-scheme:dark) {
+	:root {
+	--hariboAchtergrond:#F29F05;
+	--googleAchtergrond:#1F2123;
+	--titel: white;
+	--mainAchtergrond: #303134;
+	--hariboBorder: black;
+	--hariboShadow: white;
+	}
+}
 
 
 /* ALGEMENE STYLING */
@@ -17,7 +35,15 @@
 }
 
 body {
-  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--mainAchtergrond);
+}
+
+h1{
+	font-family: sans-serif;
+	color: var(--titel);
 }
 
 
@@ -28,8 +54,12 @@ body {
 	display: flex;
 	flex-direction: row;
 	font-size: 350%;
-	font-family: futura, sans-serif;
-  	background-color:#FFFFFF;
+	font-family: futura-pt,sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	padding: 35px 100px;
+  	background-color: var(--googleAchtergrond);
+  	margin-bottom: 20px;
 }
 h2{
 	line-height: 1em;
@@ -290,42 +320,44 @@ h2.e{
 	flex-direction: row;
 	font-family: proxima-soft-condensed,sans-serif;
 	font-size: 350%;
-	width: 100%;
+	padding: 35px 91px;
+  	background-color: var(--hariboAchtergrond);
+  	z-index: 10;
+
 
 }
 
 .haribo h2{
 	color: #E3061C;
-	text-shadow: 4px 4px 6px #000000;
+	text-shadow: 4px 4px 6px var(--hariboShadow);
 	-webkit-text-stroke-width: 5px;
-	-webkit-text-stroke-color: white;
+	-webkit-text-stroke-color: var(--hariboBorder);
 	-webkit-text-fill-color: #E3061C;
 	transform-origin: bottom;
+	opacity: 0;
 }
 
 
 .haribo h2:nth-of-type(6)::before{
 	border-radius: 50%;
-	background-color: white;
 	content: '';
-	width: 20px;
-	height: 20px;
+	width: .65em;
+	height: .65em;
 	display: block;
 	position: absolute;
-	top: 14px;
-	left: 30px;
-}
+	top: -6px;
+	left: 28px;
 
-.haribo h2:nth-of-type(6)::after{
-	border-radius: 50%;
-	background-color: white;
-	content: '';
-	width: 20px;
-	height: 20px;
-	display: block;
-	position: absolute;
-	top: 26px;
-	left: 41px;
+	background-image: 
+		radial-gradient(var(--hariboAchtergrond) 70.7%, transparent 70.7%),
+		radial-gradient(var(--hariboAchtergrond) 70.7%, transparent 70.7%),
+		radial-gradient(var(--hariboAchtergrond) 70.7%, transparent 70.7%);
+	background-size: 30% 30%;
+	background-position: 
+		15% 45%,
+		25% 70%,
+		45% 90%;
+	background-repeat: no-repeat;
 }
 
 .haribo h2:nth-of-type(6){
@@ -336,56 +368,69 @@ h2.e{
 	0%{
 		transform: translateY(-1000%) scaleX(1);
 		animation-timing-function: ease-in;
+		opacity: 1;
 	}
 
 
 	30%{
 		transform: translateY(0) scaleY(1) scaleX(1);
 		animation-timing-function: ease-out;
+		opacity: 1;
 	}
 
 	35%{
 		transform: translateY(0) scaleX(1.5) scaleY(0.8);
 		animation-timing-function: ease-in;
+		opacity: 1;
 	}
 
 	40%{
 		transform: translateY(0) scaleX(0.8) scaleY(1.5);
 		animation-timing-function: ease-out;
+		opacity: 1;
 	}
 
 	45%{
 		transform: translateY(0) scaleX(1.2) scaleY(0.9);
 		animation-timing-function: ease-in;
+		opacity: 1;
 	}
 
 	50%{
 		transform: translateY(0) scaleX(0.9) scaleY(1.2);
-		animation-timing-function: ease-out;		
+		animation-timing-function: ease-out;
+		opacity: 1;		
 	}
 
 	55%{
 		transform: translateY(0) scaleX(1) scaleY(1);
+		opacity: 1;
 	}
-
-
-
 
 	100%{
 		transform: translateY(0);
+		opacity: 1;
 	}
 }
 
 @keyframes hapje-animation{
 	0%{
 		opacity: 0;
+		transform: translateY(-60%) translateX(60%);
 	}
-	99%{
+	98%{
 		opacity: 0;
+		transform: translateY(-60%) translateX(60%);
+	}
+
+	99%{
+		opacity: 1;
+		transform: translateY(-60%) translateX(60%);
 	}
 
 	100%{
 		opacity: 1;
+		transform: translateY(0) translateX(0);
 	}
 }
 
@@ -437,15 +482,8 @@ h2.e{
 
 .haribo:hover h2:nth-of-type(6)::before{
 	animation-name: hapje-animation;
-	animation-duration: 6s;
-	animation-delay: 1s;
+	animation-duration: 7s;
 	animation-fill-mode:forwards;
 }
 
-.haribo:hover h2:nth-of-type(6)::after{
-	animation-name: hapje-animation;
-	animation-duration: 6s;
-	animation-delay: 1s;
-	animation-fill-mode:forwards;
-}
 
