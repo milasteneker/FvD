@@ -1,27 +1,204 @@
-/* CSS Document */
+*{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
 
-/* FONTS */
-@font-face {
-	font-family: 'eenfont';
-	src: url('../fonts/eenfont.woff2') format('woff2'),
-			 url('../fonts/eenfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+body{
+	background-color: #2E2E2E;
+}
+
+header{
+	background-color: white;
+	color: #2E2E2E;
+	text-align: center;
+	padding: 40px;
+	min-width: 320px;
+	display: flex;
+	align-items: center;
+}
+
+main{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 600px));
+	grid-gap: 30px 50px;
+	justify-content: center;
+
+}
+
+section{
+	margin: 30px 50px;
+	max-width: 600px;
+	min-width: 300px;	
+}
+
+.jaar1{
+	display: inline-block;
+	width: auto;
+	height: ;
+	background-color: #299E52;
+	box-sizing: border-box;
+}
+
+.jaar2{
+	display: inline-block;
+	width: auto;
+	height: ;
+	background-color: #9E1E19;
+	box-sizing: border-box;
+}
+
+.jaar3{
+	display: inline-block;
+	width: auto;
+	height: ;
+	background-color: #393B9E;
+	box-sizing: border-box;
+}
+
+.jaar4{
+	display: inline-block;
+	width: auto;
+	height: ;
+	background-color: #9E8621;
+	box-sizing: border-box;
+}
+
+.zelf{
+	display: inline-block;
+	width: auto;
+	box-sizing: border-box;
+	background-color: white;
+	min-width: 280px;
+	max-width: 1300px;
+}
+
+.zelf li{
+	color: white;
+}
+
+.zelf h2{
+	color: #2E2E2E;
+}
+
+
+h2{
+	text-align: center;
+	padding-top: 20px;
+	color: white;
+}
+
+ul{
+	margin-bottom: 6%;
+}
+
+li{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: #2E2E2E;
+	background-color: white;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	padding: 15px 0px;
+	margin: 4%;
+	width: 90%;
+}
+
+.p1{
+	background-color: #299E52; 
+	color: white;
+}
+
+.p2{
+	background-color: #9E1E19;
+	color: white;
+
+}
+
+.p3{
+	background-color: #393B9E;
+	color: white;
+
+}
+
+.p4{
+	background-color: #9E8621;
+	color: white;
 
 }
 
 
-/* ALGEMENE STYLING */
-*, *::after, *::before {
-  box-sizing:border-box;  
+a:hover{
+	background-color: #2E2E2E;
+	color: white;
 }
 
-body {
-  font-family:eenfont, sans-serif;
-  color:#111;
-  background-color:#eee;
+.overMij{
+	background-color: #2E2E2E;
+	color: white;
+	padding: 20px;
+	min-width: 80%;
+	max-width: 300px;
+	margin: auto;
+	margin-top: 20px;
+	box-sizing: border-box;
+	align-self: center;
 }
 
+.overMij:hover{
+	color: #2E2E2E;
+	background-color: white;
+	border: solid 2px #2E2E2E;
+	box-sizing: border-box;
+	width: 300px;
+}
 
-/* BRAND STYLING */
+footer{
+	text-align: center;
+	background-color: white;
+	color: #2E2E2E;
+	padding: 30px;
+	font-weight: bold;
+}
 
+main.vormgeving li:not(.vormgeving) {
+  display:none;
+}
+
+main.code li:not(.code) {
+  display:none;
+}
+
+main.overig li:not(.overig) {
+  display:none;
+}
+
+label{
+	color: #2E2E2E;
+	border: #2E2E2E 1px solid;
+	padding: 10px;
+	margin: 10px;
+
+}
+
+input{
+	display: none;
+}
+
+input:checked+label{
+	color: red;
+}
+
+input::selection+label{
+	color: blue;
+}
