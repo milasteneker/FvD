@@ -29,7 +29,9 @@ In zo’n ‘post’ neem je op:
 
 ## Voortgang 1
 Voor de eerste voortgang had ik nog niet echt een planning. Ik was nog een beetje zoekende in hoe ik alles ging maken. Ik heb voor nu alleen nog de fonts en kleuren gezocht en de google letters in mijn code gezet.
-(opdracht1/images/schetsen.jpg)(opdracht1/images/CSSinfo.jpg)
+
+!(opdracht1/images/schetsen.jpg)
+!(opdracht1/images/CSSinfo.jpg)
 
 
 ## Voortgang 2
