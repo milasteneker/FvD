@@ -39,3 +39,4 @@ Ik wou op dit moment 1 animatie werkend hebben en daar feedback op kunnen krijge
 
 ## Voortgang 3
 Ik heb de dingen die ik meegenomen heb van het tweede voortgangs gesprek aangepast en toegevoegd. Verder ben ik nog gaan werken om de darkmode toe te voegen aan mijn animaties. Dit was makkelijk om te doen, omdat het vrij voor zich spreekt. Ik heb de laatste details toegevoegd aan de animaties.
+![alt text](opdracht1/images/eindresultaat.jpg)
