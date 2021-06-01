@@ -4,13 +4,28 @@
 	padding: 0;
 }
 
+:root{
+	--Achtergrond:#DEDEDE;
+	--Detail: #2E2E2E;
+	--Tekst: white;
+	--Jaar1: #5EB560;
+	--Jaar2: #9E3E3C;
+	--Jaar3: #4B88FF;
+	--Jaar4: #FFAF29;
+}
+
+@media (prefers-color-scheme:dark) {
+	:root {
+	}
+}
+
 body{
-	background-color: #2E2E2E;
+	background-color: var(--Achtergrond);
 }
 
 header{
-	background-color: white;
-	color: #2E2E2E;
+	background-color: var(--Detail);
+	color: var(--Tekst);
 	text-align: center;
 	padding: 40px;
 	min-width: 320px;
@@ -36,7 +51,7 @@ section{
 	display: inline-block;
 	width: auto;
 	height: ;
-	background-color: #299E52;
+	background-color: var(--Jaar1);
 	box-sizing: border-box;
 }
 
@@ -44,7 +59,7 @@ section{
 	display: inline-block;
 	width: auto;
 	height: ;
-	background-color: #9E1E19;
+	background-color: var(--Jaar2);
 	box-sizing: border-box;
 }
 
@@ -52,7 +67,7 @@ section{
 	display: inline-block;
 	width: auto;
 	height: ;
-	background-color: #393B9E;
+	background-color: var(--Jaar3);
 	box-sizing: border-box;
 }
 
@@ -60,7 +75,7 @@ section{
 	display: inline-block;
 	width: auto;
 	height: ;
-	background-color: #9E8621;
+	background-color: var(--Jaar4);
 	box-sizing: border-box;
 }
 
@@ -74,18 +89,18 @@ section{
 }
 
 .zelf li{
-	color: white;
+	color: var(--Detail);
 }
 
 .zelf h2{
-	color: #2E2E2E;
+	color: var(--Detail);
 }
 
 
 h2{
 	text-align: center;
 	padding-top: 20px;
-	color: white;
+	color: var(--Tekst);
 }
 
 ul{
@@ -104,35 +119,40 @@ li{
 
 a{
 	text-decoration: none;
-	color: #2E2E2E;
-	background-color: white;
+	color: var(--Detail);
+	background-color:var(--Tekst);
 	font-weight: bold;
 	display: block;
+	flex-direction: row;
 	text-align: center;
+	justify-content: center;
+	align-items: center;
 	padding: 15px 0px;
-	margin: 4%;
+	margin: 3%;
 	width: 90%;
+	border-radius: 25px;
+	position: relative;
 }
 
 .p1{
-	background-color: #299E52; 
+	background-color: var(--Jaar1); 
 	color: white;
 }
 
 .p2{
-	background-color: #9E1E19;
+	background-color: var(--Jaar2);
 	color: white;
 
 }
 
 .p3{
-	background-color: #393B9E;
+	background-color: var(--Jaar3);
 	color: white;
 
 }
 
 .p4{
-	background-color: #9E8621;
+	background-color:var(--Jaar4);
 	color: white;
 
 }
@@ -184,21 +204,71 @@ main.overig li:not(.overig) {
 }
 
 label{
-	color: #2E2E2E;
-	border: #2E2E2E 1px solid;
-	padding: 10px;
+	color: var(--Detail);
+	padding: 10px 20px;
 	margin: 10px;
+	border: solid 1px var(--Tekst);
+	background-color: var(--Tekst);
+	border-radius: 25px;
 
+}
+input:checked+label{
+	color: var(--Detail);
+	background-color: var(--Jaar1);
+	border: solid 1px var(--Jaar1);
+}
+
+label:hover{
+	color: var(--Tekst);
+	background-color: var(--Detail);
+	border: solid 1px var(--Tekst);
 }
 
 input{
 	display: none;
 }
 
-input:checked+label{
-	color: red;
+a:focus::before{
+	content: '';
+	width: 0.1em;
+	height: 0.8em;
+	position: absolute;
+	background-color: var(--Detail);
+	display: block;
+	transform: rotate(-60deg);
+	right: 2em;
+	transform-origin: center;
 }
 
-input::selection+label{
-	color: blue;
+a:focus::after{
+	content: '';
+	width: 0.1em;
+	height: 0.8em;
+	position: absolute;
+	background-color: var(--Detail);
+	display: block;
+	transform: rotate(60deg);
+	right: 2em;
+	bottom: 0.9em;
+	transform-origin: center;
+}
+
+
+
+div{
+	display: none;
+}
+
+div.tonen{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+li img{
+	width: 90%;
+	margin: 0;
+	justify-content: space-around;
+	border: var(--Tekst) 2px solid;
+	border-radius: 25px;
 }
