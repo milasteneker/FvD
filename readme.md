@@ -49,8 +49,12 @@ Ik heb voor de eerste voortgang niks gedaan i.v.m. drukte. Wel (omdat ik al een 
 
 ![alt text](opdracht2/images/beginHTML.jpg)
 
-## Voortgang 1.2
+## Voortgang 2.2
+Voor het extra gesprek heb ik het verschuiven van de projecten werkend gemaakt en de eerste sorteer dingen ingevoegd. Ik heb alles in een grid gezet op de pagina responsive te maken.
 
+Op dit moment wou ik in ieder geval 2 basis interacties af hebben. Na een extra gesprekje had ik de preview functie werkend gekregen. Hierna heb ik gezorgt dat je een pijltje kreeg te zien als een <a> in focus is. Hiervoor heb ik naar de code gekeken uit de vorige opdracht en deze zo veranderd dat het hierbij werkt. Hierna ben ik verder gegaan met het invoegen van kleur variabelen. Dit had ik nog niet gedaan en besefte dat als ik dat nu niet zou doen het aan het einde heel veel werk werd. Ik heb hier en daar de vormgeving wat aangepast en extra hovers en dergelijke toegevoegd.
+
+![alt text](opdracht2/images/eersteVoortgang.jpg)
 
 ## Voortgang 1.3
 
