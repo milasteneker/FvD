@@ -42,7 +42,9 @@ Ik heb de dingen die ik meegenomen heb van het tweede voortgangs gesprek aangepa
 ![alt text](opdracht1/images/eindresultaat.jpg)
 
 ## Bronnenlijst
-1. 
+1. Oefening Recap: - Toetsen 2
+2. Oefening Libraries: - Drag and Drop
+					   - Filteren
 
 ## Voortgang 2.1
 Ik heb voor de eerste voortgang niks gedaan i.v.m. drukte. Wel (omdat ik al een basis website had) heb ik al een opzet van de html.
@@ -52,9 +54,11 @@ Ik heb voor de eerste voortgang niks gedaan i.v.m. drukte. Wel (omdat ik al een 
 ## Voortgang 2.2
 Voor het extra gesprek heb ik het verschuiven van de projecten werkend gemaakt en de eerste sorteer dingen ingevoegd. Ik heb alles in een grid gezet op de pagina responsive te maken.
 
-Op dit moment wou ik in ieder geval 2 basis interacties af hebben. Na een extra gesprekje had ik de preview functie werkend gekregen. Hierna heb ik gezorgt dat je een pijltje kreeg te zien als een <a> in focus is. Hiervoor heb ik naar de code gekeken uit de vorige opdracht en deze zo veranderd dat het hierbij werkt. Hierna ben ik verder gegaan met het invoegen van kleur variabelen. Dit had ik nog niet gedaan en besefte dat als ik dat nu niet zou doen het aan het einde heel veel werk werd. Ik heb hier en daar de vormgeving wat aangepast en extra hovers en dergelijke toegevoegd.
+Op dit moment wou ik in ieder geval 2 basis interacties af hebben. Na een extra gesprekje had ik de preview functie werkend gekregen. Hierna heb ik gezorgt dat je een pijltje kreeg te zien als een <a> in focus is. Hiervoor heb ik naar de code gekeken uit de vorige opdracht en deze zo veranderd dat het hierbij werkt. Hierna ben ik verder gegaan met het invoegen van kleur variabelen. Dit had ik nog niet gedaan en besefte dat als ik dat nu niet zou doen het aan het einde heel veel werk werd. Ik heb hier en daar de vormgeving wat aangepast en extra hovers en dergelijke toegevoegd. 
 
 ![alt text](opdracht2/images/eersteVoortgang.jpg)
 
-## Voortgang 1.3
+Voor de eindoplevering wil ik zorgen dat wanneer de preview is uitgeklapt het pijltje naar binnen draait. Dat er een mooie header staat met eventueel een leuke animatie met mijn naam. En dat de darkmode goed werkend is. Het ontwerp kan nu nog iets mooier, samenhangender. En mijn code moet nog opgeruimd worden en netjes neergezet.
+
+## Voortgang 2.3
 
