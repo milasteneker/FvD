@@ -45,6 +45,7 @@ Ik heb de dingen die ik meegenomen heb van het tweede voortgangs gesprek aangepa
 1. Oefening Recap: - Toetsen 2
 2. Oefening Libraries: - Drag and Drop
 					   - Filteren
+3. https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/
 
 ## Voortgang 2.1
 Ik heb voor de eerste voortgang niks gedaan i.v.m. drukte. Wel (omdat ik al een basis website had) heb ik al een opzet van de html.
@@ -61,4 +62,8 @@ Op dit moment wou ik in ieder geval 2 basis interacties af hebben. Na een extra 
 Voor de eindoplevering wil ik zorgen dat wanneer de preview is uitgeklapt het pijltje naar binnen draait. Dat er een mooie header staat met eventueel een leuke animatie met mijn naam. En dat de darkmode goed werkend is. Het ontwerp kan nu nog iets mooier, samenhangender. En mijn code moet nog opgeruimd worden en netjes neergezet.
 
 ## Voortgang 2.3
+Voor voortgang 3 heb ik de Darkmode werkend gemaakt. Het pijltje heb ik tijdens de vorige voortgang werkend gemaakt. Ik heb toch een animatie bij mijn naam gemaakt gewoon om een extra leuk ding toe te voegen. Ik heb kleine dingen veranderd voor de focus om te zorgen dat deze ook in het ontwerp passen. Ondertussen heb ik alle dingen die bij elkaar horen bij elkaar gezet en commentaar toegevoegd voor een beetje extra duidelijkheid. 
+
+![alt text](opdracht2/images/eindResultaat.jpg)
+![alt text](opdracht2/images/previewWerkend.jpg)
 
