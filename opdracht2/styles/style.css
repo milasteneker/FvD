@@ -4,10 +4,18 @@
 	padding: 0;
 }
 
+@font-face{
+	font-family: giulia,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
 :root{
 	--Achtergrond:#DEDEDE;
 	--Detail: #2E2E2E;
 	--Tekst: white;
+	--Vakken: white;
+	--DetailTekst: #2E2E2E;
 	--Jaar1: #5EB560;
 	--Jaar2: #9E3E3C;
 	--Jaar3: #4B88FF;
@@ -16,6 +24,14 @@
 
 @media (prefers-color-scheme:dark) {
 	:root {
+		--Achtergrond: #2E2E2E;
+		--Detail: white;
+		--DetailTekst: #2E2E2E;
+		--Tekst: #2E2E2E;
+		--Jaar1: #396E3A;
+		--Jaar2: #702C2B;
+		--Jaar3: #1C3361;
+		--Jaar4: #B36514;
 	}
 }
 
@@ -30,7 +46,199 @@ header{
 	padding: 40px;
 	min-width: 320px;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
+}
+
+.spatie{
+	margin: .3em;
+}
+
+p{
+	font-size: 3em;
+	font-family: giulia,sans-serif;
+}
+
+article{
+	margin: .6em;
+}
+
+/*Begin naam animatie*/
+
+@keyframes letter-bounce{
+	0%{
+		transform: scale(1);
+		animation-timing-function: ease-in;
+	}
+
+	25%{
+		transform: scale(1.2);
+		animation-timing-function: ease-out;
+	}
+
+	50%{
+		transform: scale(.8);
+		animation-timing-function: ease-in;
+	}
+
+	75%{
+		transform: scale(1);
+		animation-timing-function: ease-out;
+	}
+
+	100%{
+		transform: scale(1);
+		animation-timing-function: ease-out;
+	}
+}
+
+article:hover p:nth-of-type(1){
+	animation-name: letter-bounce;
+	animation-duration: 4.4s;
+	animation-delay: 0s;
+	animation-fill-mode:forwards;
+}
+
+article:hover p:nth-of-type(2){
+	animation-name: letter-bounce;
+	animation-duration: 4.4s;
+	animation-delay: 0.4s;
+	animation-fill-mode:forwards;
+}
+
+article:hover p:nth-of-type(3){
+	animation-name: letter-bounce;
+	animation-duration: 4.4s;
+	animation-delay: 0.8s;
+	animation-fill-mode:forwards;
+}
+
+article:hover p:nth-of-type(4){
+	animation-name: letter-bounce;
+	animation-duration: 4.4s;
+	animation-delay: 1.2s;
+	animation-fill-mode:forwards;
+}
+
+article:hover p:nth-of-type(6){
+	animation-name: letter-bounce;
+	animation-duration: 4.4s;
+	animation-delay: 1.6s;
+	animation-fill-mode:forwards;
+}
+
+article:hover p:nth-of-type(7){
+	animation-name: letter-bounce;
+	animation-duration: 4.4s;
+	animation-delay: 2s;
+	animation-fill-mode:forwards;
+}
+
+article:hover p:nth-of-type(8){
+	animation-name: letter-bounce;
+	animation-duration: 4.4s;
+	animation-delay: 2.4s;
+	animation-fill-mode:forwards;
+}
+
+article:hover p:nth-of-type(9){
+	animation-name: letter-bounce;
+	animation-duration: 4.4s;
+	animation-delay: 2.8s;
+	animation-fill-mode:forwards;
+}
+
+article:hover p:nth-of-type(10){
+	animation-name: letter-bounce;
+	animation-duration: 4.4s;
+	animation-delay: 3.2s;
+	animation-fill-mode:forwards;
+}
+
+article:hover p:nth-of-type(11){
+	animation-name: letter-bounce;
+	animation-duration: 4.4s;
+	animation-delay: 3.6s;
+	animation-fill-mode:forwards;
+}
+
+article:hover p:nth-of-type(12){
+	animation-name: letter-bounce;
+	animation-duration: 4.4s;
+	animation-delay: 4s;
+	animation-fill-mode:forwards;
+}
+
+article:hover p:nth-of-type(13){
+	animation-name: letter-bounce;
+	animation-duration: 4.4s;
+	animation-delay: 4.4s;
+	animation-fill-mode:forwards;
+}
+/* Eind naam animatie */
+
+/* Begin sorteer balk */
+nav{
+	align-self: flex-start;
+}
+
+main.vormgeving li:not(.vormgeving) {
+  display:none;
+}
+
+main.code li:not(.code) {
+  display:none;
+}
+
+main.overig li:not(.overig) {
+  display:none;
+}
+
+label{
+	color: var(--Detail);
+	padding: 0.8em 1.6em;
+	margin: .9em;
+	border: solid 1px var(--Tekst);
+	background-color: var(--Tekst);
+	border-radius: 25px;
+	font-size: 70%;
+	font-weight: bold;
+
+}
+
+input:checked+label{
+	color: var(--Detail);
+	background-color: var(--Jaar1);
+	border: solid 1px var(--Jaar1);
+}
+
+label:hover{
+	color: var(--Tekst);
+	background-color: var(--Detail);
+	border: solid 1px var(--Tekst);
+}
+
+/* Bron: https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/*/
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+input:focus+label{
+	border: 3px solid var(--Tekst);
+}
+
+/* Eind sorteer balk */
+
+article{
+	display: flex;
+	flex-direction: row;
 }
 
 main{
@@ -93,7 +301,7 @@ section{
 }
 
 .zelf h2{
-	color: var(--Detail);
+	color: var(--DetailTekst);
 }
 
 
@@ -117,10 +325,16 @@ li{
 	padding: 10px;
 }
 
+a:focus{
+	outline: none;
+	border-radius: 25px;
+	border: solid #2E2E2E 4px;
+}
+
 a{
 	text-decoration: none;
-	color: var(--Detail);
-	background-color:var(--Tekst);
+	color: var(--DetailTekst);
+	background-color:var(--Vakken);
 	font-weight: bold;
 	display: block;
 	flex-direction: row;
@@ -163,103 +377,41 @@ a:hover{
 	color: white;
 }
 
-.overMij{
-	background-color: #2E2E2E;
-	color: white;
-	padding: 20px;
-	min-width: 80%;
-	max-width: 300px;
-	margin: auto;
-	margin-top: 20px;
-	box-sizing: border-box;
-	align-self: center;
-}
-
-.overMij:hover{
-	color: #2E2E2E;
-	background-color: white;
-	border: solid 2px #2E2E2E;
-	box-sizing: border-box;
-	width: 300px;
-}
-
-footer{
-	text-align: center;
-	background-color: white;
-	color: #2E2E2E;
-	padding: 30px;
-	font-weight: bold;
-}
-
-main.vormgeving li:not(.vormgeving) {
-  display:none;
-}
-
-main.code li:not(.code) {
-  display:none;
-}
-
-main.overig li:not(.overig) {
-  display:none;
-}
-
-label{
-	color: var(--Detail);
-	padding: 10px 20px;
-	margin: 10px;
-	border: solid 1px var(--Tekst);
-	background-color: var(--Tekst);
-	border-radius: 25px;
-
-}
-input:checked+label{
-	color: var(--Detail);
-	background-color: var(--Jaar1);
-	border: solid 1px var(--Jaar1);
-}
-
-label:hover{
-	color: var(--Tekst);
-	background-color: var(--Detail);
-	border: solid 1px var(--Tekst);
-}
-
-input{
-	display: none;
+/*Begin review zichtbaar maken en weghalen*/
+a:focus::before,a:focus::after{
+	content: '';
+	width: 0.1em;
+	height: 0.8em;
+	position: absolute;
+	background-color: var(--DetailTekst);
+	display: block;
+	right: 2em;
+	transform-origin: center;
+	transition: .3s;
 }
 
 a:focus::before{
-	content: '';
-	width: 0.1em;
-	height: 0.8em;
-	position: absolute;
-	background-color: var(--Detail);
-	display: block;
 	transform: rotate(-60deg);
-	right: 2em;
-	transform-origin: center;
 }
 
 a:focus::after{
-	content: '';
-	width: 0.1em;
-	height: 0.8em;
-	position: absolute;
-	background-color: var(--Detail);
-	display: block;
 	transform: rotate(60deg);
-	right: 2em;
 	bottom: 0.9em;
-	transform-origin: center;
 }
 
+li.tonen a:focus::before{
+	transform: rotate(60deg);
+}
 
+li.tonen a:focus::after{
+	transform: rotate(-60deg);
+}
 
 div{
 	display: none;
 }
 
-div.tonen{
+li.tonen div{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -272,3 +424,16 @@ li img{
 	border: var(--Tekst) 2px solid;
 	border-radius: 25px;
 }
+/*Eind review zichtbaar maken en weghalen*/
+
+footer{
+	text-align: center;
+	background-color: white;
+	color: #2E2E2E;
+	padding: 30px;
+	font-weight: bold;
+}
+footer p{
+	font-size: 1em;
+}
+

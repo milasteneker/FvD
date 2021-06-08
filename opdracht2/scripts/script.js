@@ -5,6 +5,8 @@ console.log("howdy");
 var deLijst = document.getElementById('list');
 var sortable = Sortable.create(deLijst);
 
+// Begin filteren
+// Bron: Oefening Libraries: Filteren
 var optionAll = document.querySelector("#filter-all");
 var optionVormgeving = document.querySelector("#filter-vormgeving");
 var optionCode = document.querySelector("#filter-code");
@@ -21,9 +23,11 @@ optionAll.addEventListener("change", filterList);
 optionVormgeving.addEventListener("change", filterList);
 optionCode.addEventListener("change", filterList);
 optionOverig.addEventListener("change", filterList);
+// Eind filteren 
 
 
-// Preview
+// Begin preview geven
+// Bron: Oefening Recap: Toetsen 2
 var aEen = document.querySelector('a[href="https://oege.ie.hva.nl/~stenekm/Eindopdracht/"]');
 var aTwee = document.querySelector('a[href="https://oege.ie.hva.nl/~stenekm/Eindproject/StichtingJeugdwerk/"]');
 var aDrie = document.querySelector('a[href="https://oege.ie.hva.nl/~stenekm/onepager/"]');
@@ -31,7 +35,7 @@ var aVier = document.querySelector('a[href="https://oege.ie.hva.nl/~stenekm/todo
 var aVijf = document.querySelector('a[href="https://milasteneker.github.io/blokweb/"]');
 var aZes = document.querySelector('a[href="https://oege.ie.hva.nl/~stenekm/ProjectBeyond.pdf"]');
 var aZeven = document.querySelector('a[href="https://oege.ie.hva.nl/~stenekm/Ubicomp.pdf"]');
-// var sluitenButton	= document.querySelector("close");
+
 console.log(aEen);
 console.log(aTwee);
 console.log(aDrie);
@@ -41,33 +45,21 @@ console.log(aZes);
 console.log(aZeven);
 
 function openPreviewMetToetsen(event) {
-  /* de nav opzoeken met document.querySelector */
-  /* en die in een variabele stoppen */
-  let dePreview = event.target.nextElementSibling;
+  let deLi = event.target.parentElement;
 
-  
-  /* bepalen welke toets is ingedrukt */
-  switch(event.key) {
-    /* als dat de ArrowRight is dan dit doen */  
+  switch(event.key) { 
     case "ArrowRight":
-      dePreview.classList.add("tonen");
-      /* break - zodat de andere toetsen niet onnodig gecheckt worden */
-      break;
-    /* als dat de ArrowLeft is dan dit doen */  
+      deLi.classList.add("tonen");
+      break; 
     case "ArrowLeft":
-      dePreview.classList.remove("tonen");
-      break;
-    /* als dat de Escape is dan dit doen */  
+      deLi.classList.remove("tonen");
+      break;  
     case "Escape":
-      dePreview.classList.remove("tonen");
+      deLi.classList.remove("tonen");
       break;
-
   }
 }
 
-// function previewSluiten(){
-// 	  dePreview.classList.remove("tonen");
-// }
 aEen.addEventListener('keydown', openPreviewMetToetsen);
 aTwee.addEventListener('keydown', openPreviewMetToetsen);
 aDrie.addEventListener('keydown', openPreviewMetToetsen);
@@ -75,4 +67,5 @@ aVier.addEventListener('keydown', openPreviewMetToetsen);
 aVijf.addEventListener('keydown', openPreviewMetToetsen);
 aZes.addEventListener('keydown', openPreviewMetToetsen);
 aZeven.addEventListener('keydown', openPreviewMetToetsen);
-// sluitenButton.addEventListener('click', previewSluiten);
+
+// Einde preview geven 
