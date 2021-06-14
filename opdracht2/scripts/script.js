@@ -85,56 +85,54 @@ aAcht.addEventListener('touchmove', openPreviewMetSwipen);
 
 // Einde preview geven 
 
-/* https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API */
 
-var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
-var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList;
-var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent;
+// var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+// var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList;
+// var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent;
 
-/* de commando's */
-var commandos = [ 'open', 'sluit'];
-var grammar = '#JSGF V1.0; grammar commandos; public <commando> = ' + commandos.join(' | ') + ' ;'
+// /* de commando's */
+// var commandos = [ 'open', 'sluit'];
+// var grammar = '#JSGF V1.0; grammar commandos; public <commando> = ' + commandos.join(' | ') + ' ;'
 
-/* het luisterobject */
-var recognition = new SpeechRecognition();
-var speechRecognitionList = new SpeechGrammarList();
+// /* het luisterobject */
+// var recognition = new SpeechRecognition();
+// var speechRecognitionList = new SpeechGrammarList();
 
-/* als er een commando uitgesproken is */
-function spraakAfhandelen(event) {
+// /* als er een commando uitgesproken is */
+// function spraakAfhandelen(event) {
 
-  let deLi = document.querySelector("main");
-  let last = event.results.length - 1;
-  let commando = event.results[last][0].transcript;
-  console.log('Result received: ' + commando + '. ' + 'Confidence: ' + event.results[0][0].confidence);
+//   let last = event.results.length - 1;
+//   let commando = event.results[last][0].transcript;
+//   console.log('Result received: ' + commando + '. ' + 'Confidence: ' + event.results[0][0].confidence);
 
-  if ( commando.trim() == "open") {
-  	let deLi = event.target.parentElement;
-    deLi.classList.add("tonen");
-  } else if (commando.trim() == "sluit") {
-  	let deLi = event.target.parentElement;
-    deLi.classList.remove("tonen");
-  }
-}
+//   if ( commando.trim() == "open") {
+//   	let deLi = event.target.parentElement;
+//     deLi.classList.add("tonen");
+//   } else if (commando.trim() == "sluit") {
+//   	let deLi = event.target.parentElement;
+//     deLi.classList.remove("tonen");
+//   }
+// }
 
-function luisteren(){
-   recognition.start();
-   console.log('Ready to receive a command.');
-}
+// function luisteren(){
+//    recognition.start();
+//    console.log('Ready to receive a command.');
+// }
 
-/* het luisterobject de commando's leren */
-speechRecognitionList.addFromString(grammar, 1);
-recognition.grammars = speechRecognitionList;
-recognition.continuous = true;
-recognition.lang = 'nl';
-recognition.interimResults = true;
-recognition.maxAlternatives = 1;
+// /* het luisterobject de commando's leren */
+// speechRecognitionList.addFromString(grammar, 1);
+// recognition.grammars = speechRecognitionList;
+// recognition.continuous = true;
+// recognition.lang = 'nl';
+// recognition.interimResults = true;
+// recognition.maxAlternatives = 1;
 
-recognition.onresult = function(event) {
-   spraakAfhandelen(event);
-}
+// recognition.onresult = function(event) {
+//    spraakAfhandelen(event);
+// }
 
-recognition.onend = function() {
-   luisteren();
-}
+// recognition.onend = function() {
+//    luisteren();
+// }
 
-luisteren();
+// luisteren();

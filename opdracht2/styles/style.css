@@ -201,7 +201,7 @@ main.overig li:not(.overig) {
 label{
 	color: var(--Detail);
 	padding: 0.8em 1.6em;
-	margin: .9em;
+	margin: .7em;
 	border: solid 1px var(--Tekst);
 	background-color: var(--Tekst);
 	border-radius: 25px;
@@ -483,4 +483,15 @@ footer p{
 		font-size: 21px;
 		border-radius: 40px;
 	}
+
+	a:focus::after{
+		transform: rotate(60deg);
+		bottom: 0.7em;
+	}
 }
+
+@media only screen and (max-width: 464px){
+	nav{
+		display: flex;
+	}
+	}
