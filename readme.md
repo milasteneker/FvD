@@ -46,6 +46,7 @@ Ik heb de dingen die ik meegenomen heb van het tweede voortgangs gesprek aangepa
 2. Oefening Libraries: - Drag and Drop
 					   - Filteren
 3. https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/
+4. https://www.w3schools.com/jsref/obj_touchevent.asp
 
 ## Voortgang 2.1
 Ik heb voor de eerste voortgang niks gedaan i.v.m. drukte. Wel (omdat ik al een basis website had) heb ik al een opzet van de html.
@@ -67,3 +68,15 @@ Voor voortgang 3 heb ik de Darkmode werkend gemaakt. Het pijltje heb ik tijdens 
 ![alt text](opdracht2/images/eindResultaat.jpg)
 ![alt text](opdracht2/images/previewWerkend.jpg)
 
+## Herkansing
+Na het eindgesprek waren er een aantal dingen die ik moest aanpassen. De preview functie moest werkend zijn voor wanneer een persoon geen toetsenbord heeft. Dus bijvoorbeeld op een touchscreen. Hiervoor heb ik gekozen om te swipen over de balk zodat je dit makkelijk op een touchsceen kunt gebruiken en het lijkt op de interactie op het toestenbord.
+
+Ook was de website niet goed leesbaar voor wanneer iemand een heel groot scherm had. Hiervoor heb ik gekozen om alles vanaf 2000px breed een stukje groter te maken en ervoor gezorgt dat er maar 3 kolommen naast elkaar kunnen staan zodat de pagina mooi blijft. Ik heb aan de preview een stukje tekst toegevoegd zodat je van te voren kunt lezen waarover het project gaat.
+
+Hier en daar moest ik nog wat dingen aanpassen voor als de pagina heel groot of heel klein was zoals de sorteer functie en de animatie van de pijltjes want die vervormde een beetje.
+
+Ik heb geprobeerd om de spraak functie werkend te maken, maar dat kreeg ik niet aan de praat. Als er tijd over is tijdens het eindgesprek zou ik deze nog wel graag willen doornemen.
+
+![alt text](opdracht2/images/Her.jpg)
+![alt text](opdracht2/images/previewWerkendHer.jpg)
+![alt text](opdracht2/images/Telefoon.jpg)
