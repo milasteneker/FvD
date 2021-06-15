@@ -47,6 +47,7 @@ Ik heb de dingen die ik meegenomen heb van het tweede voortgangs gesprek aangepa
 					   - Filteren
 3. https://www.a11yproject.com/posts/2013-01-11-how-to-hide-content/
 4. https://www.w3schools.com/jsref/obj_touchevent.asp
+5. https://ferie.medium.com/detect-a-touch-device-with-only-css-9f8e30fa1134
 
 ## Voortgang 2.1
 Ik heb voor de eerste voortgang niks gedaan i.v.m. drukte. Wel (omdat ik al een basis website had) heb ik al een opzet van de html.
@@ -80,3 +81,10 @@ Ik heb geprobeerd om de spraak functie werkend te maken, maar dat kreeg ik niet 
 ![alt text](opdracht2/images/Her.jpg)
 ![alt text](opdracht2/images/previewWerkendHer.jpg)
 ![alt text](opdracht2/images/Telefoon.jpg)
+
+Ik heb dit een dag van te voren ingeleverd, hierna kreeg ik nog wat feedback van Sanne. Dit ging over dat de preview functie nog niet werkend was met en muis. Hiervoor heb ik gekozen om dit te doen met mouse-enter en mouse-leave.
+
+Daarna heb ik ervoor gezorgt dat je een soort feedforward te geven van het swipen. Dit heb ik gedaan door bij een touchscreen een icoontje in beeld te laten komen die heen en weer beweegd om te laten zien dat je kunt swipen. Voor het mooi maken van het icoontje heb ik ook nog een media-query toegevoegd waarmee je als het scherm te klein word het icoontje onder de tekst komt te staan. Ik heb het icoontje toegevoegd in een ::before en de svg in het content deel gezet.
+
+![alt text](opdracht2/images/code.jpg)
+![alt text](opdracht2/images/icoonVoorbeeld.jpg)
