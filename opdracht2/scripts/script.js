@@ -64,6 +64,17 @@ function openPreviewMetSwipen(event) {
   deLi.classList.toggle("tonen");
 }
 
+function openPreviewMetMuis(event) {
+  let deLi = event.target.parentElement;
+
+  deLi.classList.add("tonen");
+}
+
+function sluitPreviewMetMuis(event) {
+  let deLi = event.target.parentElement;
+
+  deLi.classList.remove("tonen");
+}
 
 aEen.addEventListener('keydown', openPreviewMetToetsen);
 aTwee.addEventListener('keydown', openPreviewMetToetsen);
@@ -82,6 +93,25 @@ aVijf.addEventListener('touchmove', openPreviewMetSwipen);
 aZes.addEventListener('touchmove', openPreviewMetSwipen);
 aZeven.addEventListener('touchmove', openPreviewMetSwipen);
 aAcht.addEventListener('touchmove', openPreviewMetSwipen);
+
+aEen.addEventListener('mouseenter', openPreviewMetMuis);
+aTwee.addEventListener('mouseenter', openPreviewMetMuis);
+aDrie.addEventListener('mouseenter', openPreviewMetMuis);
+aVier.addEventListener('mouseenter', openPreviewMetMuis);
+aVijf.addEventListener('mouseenter', openPreviewMetMuis);
+aZes.addEventListener('mouseenter', openPreviewMetMuis);
+aZeven.addEventListener('mouseenter', openPreviewMetMuis);
+aAcht.addEventListener('mouseenter', openPreviewMetMuis);
+
+aEen.addEventListener('mouseleave', sluitPreviewMetMuis);
+aTwee.addEventListener('mouseleave', sluitPreviewMetMuis);
+aDrie.addEventListener('mouseleave', sluitPreviewMetMuis);
+aVier.addEventListener('mouseleave', sluitPreviewMetMuis);
+aVijf.addEventListener('mouseleave', sluitPreviewMetMuis);
+aZes.addEventListener('mouseleave', sluitPreviewMetMuis);
+aZeven.addEventListener('mouseleave', sluitPreviewMetMuis);
+aAcht.addEventListener('mouseleave', sluitPreviewMetMuis);
+
 
 // Einde preview geven 
 

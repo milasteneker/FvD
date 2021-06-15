@@ -495,3 +495,64 @@ footer p{
 		display: flex;
 	}
 	}
+
+
+/*Bron: https://ferie.medium.com/detect-a-touch-device-with-only-css-9f8e30fa1134*/
+	@media (hover: none) and (pointer: coarse) {
+@keyframes swipen-animatie{
+	0% {
+	opacity: 0;
+	transform: translateX(0);
+  }
+
+  10%{
+  	opacity: 100%;
+  	transform: translateX(0);
+  }
+
+  30%{
+  	 opacity: 100%;
+  	transform: translateX(-1.8em);
+  }
+
+  70%{
+  	opacity: 100%;
+  	transform: translateX(1.8em);
+  }
+
+  90%{
+  	opacity: 100%;
+  	transform: translateX(0);   	
+  }
+
+	100% {
+    transform: translateX(0);
+  }
+
+}
+
+a[href="https://oege.ie.hva.nl/~stenekm/Eindopdracht/"]::before{
+	content: url(../images/swipeIcon.svg);
+	display: flex;
+	position: absolute;
+	width: 2.5em;
+	left: 2em;
+	animation-name: swipen-animatie;
+	animation-duration: 4s;
+	animation-delay: 2s;
+	animation-fill-mode:forwards;
+	opacity: 0;
+}
+@media only screen and (max-width: 600px){
+
+a[href="https://oege.ie.hva.nl/~stenekm/Eindopdracht/"]::before{
+	top: 2.2em;
+}
+
+@media only screen and (max-width: 408px){
+
+a[href="https://oege.ie.hva.nl/~stenekm/Eindopdracht/"]::before{
+	top: 3.2em;
+}
+
+}
